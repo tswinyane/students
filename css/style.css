@@ -81,3 +81,10 @@ li {
 .error {
   color: red;
 }
+
+.atable, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+

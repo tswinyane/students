@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-</style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
 
 
 
 <?php
 
-	include("config/settings.php");
-   //include('includes/sessions.php');
-	$sql = "SELECT * FROM student_record ";
-	$result = mysqli_query($conn,$sql);
+    include("config/settings.php");
+    //include('includes/sessions.php');
+    $sql = "SELECT * FROM student_record ";
+    $result = mysqli_query($conn,$sql);
 
-	echo "<h2>Students Record. <a href='index.php'>Home</a></h2>  ";
-	echo "<table border='1'>
+    echo "<h2>Students Record. <a href='index.php'>Home</a></h2>  ";
+    echo "<table class='atable'>
 	<tr>
 	   <th>Name</th>
 	   <th>Surname</th>
