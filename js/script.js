@@ -3,8 +3,8 @@ function insertRecord(){
 
   $(document).ready(function() {
 
-  $("#submit").on("submit", function(event) {
-    
+  //$("#submit").on("onclick", function(event) {
+  //alert("Hello");
     $("#result").empty();
    
     if(!ValidateFormInput()){
@@ -18,7 +18,7 @@ function insertRecord(){
               surname: $("#surname").val(),    
               email: $("#email").val(), 
               studentno: $("#studentno").val(),
-              course: $("#course").val(),                
+              course: $("#course").val()               
           },
           success: function(result) {
             //$("#result").html(result);
@@ -35,7 +35,7 @@ function insertRecord(){
     
       
     
-  }); 
+  //}); 
 
 });
 
@@ -51,7 +51,7 @@ function ValidateFormInput()
     {
 
       if($("#name").val()==="" ){
-                $("#name").next().html("Please your name");
+                $("#name").next().html("Please Enter your name");
                 success = false;
       }
             /*if($(this).val()==="" && $(this).is(":text"))

@@ -4,13 +4,13 @@
     <title>Student Records</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
     <h1>Students Records</h1>
-    <form id="form1" action="insertRecord" method="POST">
+    <form id="form1" name="form1"  >
       <p>
         Please enter  Student Records:
       </p>
